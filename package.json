@@ -1,0 +1,14 @@
+{
+  "name": "test-rollup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c --watch"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "rollup-plugin-babel": "^3.0.4"
+  }
+}
