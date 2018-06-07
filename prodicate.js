@@ -41,6 +41,7 @@
       weaksetTag = '[object WeakSet]',
       mapTag = '[object Map]',
       weakmapTag = '[object WeakMap]',
+      formdataTag = '[object FormData]',
       stringTag = '[object String]';
 
     function stringp(value) {
@@ -87,6 +88,10 @@
 
     function promisep(value) {
       return _tostring(value) === promiseTag;
+    }
+
+    function formdatap(value) {
+      return _tostring(value) === formdataTag;
     }
 
     function datep(value) {
