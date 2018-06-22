@@ -121,6 +121,7 @@
     }
 
     function eql(obj, other) {
+        if(stringp(obj) && stringp(other) && obj === other) return false;
         return obj === other;
     }
 
@@ -285,7 +286,7 @@
         equal,
         equalp,
         copytree,
-    };
+    }
 
     return main;
 

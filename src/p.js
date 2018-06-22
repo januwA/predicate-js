@@ -116,6 +116,7 @@ export function emptyp(value) {
 }
 
 export function eql(obj, other) {
+    if(stringp(obj) && stringp(other) && obj === other) return false;
     return obj === other;
 }
 
