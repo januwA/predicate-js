@@ -1,9 +1,11 @@
 const {
     stringp,
-    integerp,
-    eql
+    eql,
+    intp,
+    floatp
 } = require('./dist/predicate')
 const l = console.log;
 
 
-l(eql("1", "1"))
+l(intp(233))
+l(floatp(2.33))

@@ -34,10 +34,13 @@ export function numberp(value) {
         number > Number.MIN_VALUE
 }
 
-export function integerp(value) {
+export function intp(value) {
     return Number.isInteger(value);
 }
 
+export function floatp(value) {
+    return !intp(value);
+}
 
 export function booleanp(value) {
     return typeof value === 'boolean' || _tostring(value) === boolTag;

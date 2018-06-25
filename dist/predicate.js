@@ -39,10 +39,13 @@
             number > Number.MIN_VALUE
     }
 
-    function integerp(value) {
+    function intp(value) {
         return Number.isInteger(value);
     }
 
+    function floatp(value) {
+        return !intp(value);
+    }
 
     function booleanp(value) {
         return typeof value === 'boolean' || _tostring(value) === boolTag;
@@ -263,7 +266,8 @@
     var main = {
         stringp,
         numberp,
-        integerp,
+        intp,
+        floatp,
         booleanp,
         undefinedp,
         nullp,

@@ -1,7 +1,8 @@
 import {
     stringp,
     numberp,
-    integerp,
+    intp,
+    floatp,
     booleanp,
     undefinedp,
     nullp,
@@ -30,7 +31,8 @@ import {
 export default {
     stringp,
     numberp,
-    integerp,
+    intp,
+    floatp,
     booleanp,
     undefinedp,
     nullp,
